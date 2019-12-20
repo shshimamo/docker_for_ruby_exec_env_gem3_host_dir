@@ -7,8 +7,4 @@ services:
     build: .
     volumes:
       - .:/app
-      - app-bundle:/usr/local/bundle
-
-volumes:
-  # Bundlerでインストールされるgemを格納するボリューム
-  app-bundle:
+      - ./vendor/docker/bundle:/usr/local/bundle
